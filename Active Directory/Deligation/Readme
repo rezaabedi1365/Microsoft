@@ -1,0 +1,27 @@
+https://www.youtube.com/watch?v=dcE4rEgYxrk
+
+
+##  How to Prevent Standard Users from Joining Computers  
+
+step1)
+new > gourp [ global -security] > enable-join-group
+
+
+step2)
+method1:
+computers OR domain > delegation > add > enable-join-group > join to domain > 
+method2:
+computers OR domain > delegation > add > enable-join-group > only the following object > computer object >
+create selected object in this folder & delete selected object in this folder > permisiton set all >
+
+verify :
+computers > securty tab > 
+
+
+step3)
+group policy default > setting > add workstation to domain > defalut is authentication users > change to enable-join-group
+
+step4)
+edit
+computer configuration > windows setting > security setting > user right assignment > change group to enable-join-group
+adsi > domani properties > ms-DS-MachineAccountQuota [default 10] change to 0
