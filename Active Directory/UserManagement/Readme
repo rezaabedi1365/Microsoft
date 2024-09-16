@@ -1,0 +1,8 @@
+
+copy Add-NewUsers.ps1 to c:\
+copy NewUsersFinal.csv to c:\
+
+
+run powershell with Administrtator Privilage
+cd c:\
+> .\Add-NewUsers.ps1
