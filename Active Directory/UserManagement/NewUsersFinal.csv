@@ -1,0 +1,4 @@
+﻿FirstName,Initials,Lastname,Username,Email,StreetAddress,City,ZipCode,State,Country,Department,Password,Telephone,JobTitle,Company,OU
+Reza,,Abedi,r.abedi,r.abedi@sanbod.co,,,,,,,aA@123456,,,,"OU=common,OU=Users and Groups,OU=Sanbod Organization,DC=sanbod,DC=tech"
+Kianosh,,Habibi,k.habibi,k.habibi@sanbod.co,,,,,,,aA@123456,,,,"OU=common,OU=Users and Groups,OU=Sanbod Organization,DC=sanbod,DC=tech"
+Proshat,,Rahmani,p.rahmani,p.rahmani@sanbod.co,,,,,,,aA@123456,,,,"OU=common,OU=Users and Groups,OU=Sanbod Organization,DC=sanbod,DC=tech"
