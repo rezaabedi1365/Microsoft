@@ -1,4 +1,7 @@
 
+https://www.alitajran.com/create-active-directory-users-from-csv-with-powershell/#h-before-you-start-to-create-active-directory-users-from-csv-file
+https://www.lepide.com/how-to/create-modify-and-remove-user-in-active-directory-using-powershell.html
+
 copy Add-NewUsers.ps1 to c:\
 copy NewUsersFinal.csv to c:\
 
@@ -6,3 +9,12 @@ copy NewUsersFinal.csv to c:\
 run powershell with Administrtator Privilage
 cd c:\
 > .\Add-NewUsers.ps1
+
+
+---------------------------------------------
+verify NewUsersFinal.csv file:
+
+Import-Csv "C:\NewUsersFinal.csv" -Delimiter ";" | Format-Table
+Import-Csv "C:\NewUsersFinal.csv" -Delimiter "," | Format-Table
+
+
