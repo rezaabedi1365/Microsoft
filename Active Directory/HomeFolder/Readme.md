@@ -1,0 +1,3 @@
+
+
+\\shareserver\sharepath\%username%
