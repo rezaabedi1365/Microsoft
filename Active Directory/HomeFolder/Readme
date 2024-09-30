@@ -1,0 +1,20 @@
+1- in file server 
+Create Folder in Fileserver
+     sharing 
+         Domain Admins> full
+         Domain Users> Change&Read
+     securitz
+         domain admins:full
+         Domain users>Special
+           this folder (read,execute,listfulder)
+FSRM: Quta 
+   add rule file and storage > fileserver resource manager
+   file resource manager > Quta manaegement > Quta > Create Quta : patch : D:\Homefolders | Auto Deploy
+
+   
+2- in DC
+  select users> Properties > Profile tab > connect to > \\shareserver\sharepath\%username%
+  * dc to fileserver port 445
+
+
+
