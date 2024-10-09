@@ -1,15 +1,21 @@
+## https://gal.vin/wsus-windows-server-core-walkthrough/
 ## https://www.ajtek.ca/wsus/how-to-remove-wsus-completely-and-reinstall-it/
 ## https://www.hostcheetah.com/t/how-to-remove-wsus-settings-and-restore-windows-update-defaults/1034
 
 
 #install wsus Rolle:
-"C:\Program Files\Update Services\Tools\wsusutil.exe" postinstall CONTENT_DIR=D:\update
+1- install rolle: 
+      Install-WindowsFeature -Name UpdateServices -IncludeManagementTools
+
+2- 
+3- post install :
+      CD "C:\Program Files\Update Services\Tools"
+      .\wsusutil.exe postinstall CONTENT_DIR=D:\Update
 
 #Remove Update Rolle:
-1- Remove-WindowsFeature -Name UpdateServices,UpdateServices-DB,UpdateServices-RSAT,UpdateServices-API,UpdateServices-UI -IncludeManagementTools
-2- Navigate to *HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows*
-      Right Click and Delete the registry key WindowsUpdate, then close the registry editor.
-3- 
+1- In powershell :
+      Remove-WindowsFeature -Name UpdateServices,UpdateServices-DB,UpdateServices-RSAT,UpdateServices-API,UpdateServices-UI -IncludeManagementTools
+
 
 
 
