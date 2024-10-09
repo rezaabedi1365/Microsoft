@@ -5,3 +5,5 @@ Import-Module WebAdministration
 
 $WsusPool = Get-Item IIS:\AppPools\WsusPool\
 $WsusPool.failure.rapidFailProtectionInterval
+
+Set-WebConfigurationProperty '//*[@name="WsusPool"]//failure' -Name rapidFailProtectionInterval -Value (New-TimeSpan -Minutes 30)
