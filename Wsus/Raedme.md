@@ -6,6 +6,7 @@
 #install wsus Rolle:
 1- install rolle: 
       Install-WindowsFeature -Name UpdateServices -IncludeManagementTools
+      Install-WindowsFeature -Name UpdateServices-Ui
 
 2- 
 3- post install :
