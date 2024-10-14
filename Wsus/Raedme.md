@@ -22,7 +22,8 @@ remove rolle | wid feature | update services tolls feature
 OR
       Uninstall-WindowsFeature -Name UpdateServices,Windows-Internal-Database -Restart
 
-
+Reinstall :
+Install-WindowsFeature UpdateServices -Restart
 
 
 #Sample for if:
