@@ -3,6 +3,13 @@ sfc /scannow
 log file path: c:\windows\logs\CBS\cbs.log
 
 Dism /Online /Cleanup-Image /StartComponentCleanup
+
+DISM /Online /Cleanup-Image /checkHealth
 DISM /Online /Cleanup-Image /ScanHealth
+
 Dism /Online /Cleanup-Image /RestoreHealth
+DISM.exe /Online /Cleanup-image /Restorehealth /source:WIM:E:\Sources\Install.wim:1 /LimitAccess
+DISM.exe /Online /Cleanup-image /Restorehealth /source:E:\Sources\Install.wim /LimitAccess
+
+
 log file path: c:\windows\DISM\dism.log
