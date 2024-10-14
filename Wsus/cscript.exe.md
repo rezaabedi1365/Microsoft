@@ -3,4 +3,5 @@ sfc /scannow
 log file path: c:\windows\logs\CBS\cbs.log
 
 Dism /Online /Cleanup-Image /StartComponentCleanup
+DISM /Online /Cleanup-Image /ScanHealth
 Dism /Online /Cleanup-Image /RestoreHealth
