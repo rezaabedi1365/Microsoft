@@ -14,8 +14,13 @@
       .\wsusutil.exe postinstall CONTENT_DIR=D:\Update
 
 #Remove Update Rolle:
-1- In powershell :
-      Remove-WindowsFeature -Name UpdateServices,UpdateServices-DB,UpdateServices-RSAT,UpdateServices-API,UpdateServices-UI -IncludeManagementTools
+remove iis website and applicationpool
+2-Remove c:\Prigram Files\update services
+3- In powershell :
+remove rolle | wid feature | update services tolls feature
+      Remove-WindowsFeature -Name UpdateServices,UpdateServices-DB,UpdateServices-RSAT,UpdateServices-API,UpdateServices-UI,Windows-Internal-Database -IncludeManagementTools
+OR
+      Uninstall-WindowsFeature -Name UpdateServices,Windows-Internal-Database -Restart
 
 
 
