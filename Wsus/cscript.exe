@@ -5,3 +5,4 @@ log file path: c:\windows\logs\CBS\cbs.log
 Dism /Online /Cleanup-Image /StartComponentCleanup
 DISM /Online /Cleanup-Image /ScanHealth
 Dism /Online /Cleanup-Image /RestoreHealth
+log file path: c:\windows\DISM\dism.log
