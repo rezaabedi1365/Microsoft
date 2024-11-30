@@ -1,0 +1,41 @@
+Download and import LAPS
+	*install 
+	*Import-Module admpwd.ps
+	*verify : Get-Help "admpwd"
+
+
+shcema prepration (user schema master Permition)
+   add ms-MCS-AdmPwdExpirationTime   to computer > Attribute Editor Tab
+   add ms-MCS-Admpwd  to computer > Attribute Editor Tab
+	*Update-AdmPwdADSchema
+
+
+set selfPermition 
+	*get-help Set-AdmPwdComputerSelfPermition -Example
+	*Set-AdmPwdComputerSelfPermition -OrgUnit Clients
+	*Set-AdmPwdComputerSelfPermition -OrgUnit Servers
+
+
+
+Deligate Permition
+	*Find-AdmPwdExtemdedRights | fl
+	*Set-AdmPwdReadPasswordPermition  
+		>Clients
+		>helpdesks
+
+Group Policy
+	*Poliucy > administrative > LAPS >
+		>Password Setting  14 Day  14 Character
+		>Enable local admin password management
+
+
+------------------------------------------------
+Read passwod
+	method1) Get-AdmPwdPassword -ComputerName Client -01
+
+	method2) insatall LAPS Management Consol > c:\Programfiles\LSPS\AdmPwd.UI
+
+
+----------------------------------------------
+install agent on clients
+	
