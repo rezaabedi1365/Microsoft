@@ -17,4 +17,4 @@ https://novablog.ir/manage-partitions-with-cmd/
  
 
 How to change partition scheme between MBR and GPT in Windows PC? 
-https://www.diskpart.com/gpt-mbr/mbr-vs-gpt-1004.html 
+- https://www.diskpart.com/gpt-mbr/mbr-vs-gpt-1004.html 
