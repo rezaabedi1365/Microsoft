@@ -3,6 +3,7 @@
 ### Delete Partition 
 https://novablog.ir/manage-partitions-with-cmd/ 
 - Delete partition override
+
 ![image](https://github.com/user-attachments/assets/b458c07c-11e9-44ee-bc32-f21f19c49c91)
 
 ![image](https://github.com/user-attachments/assets/8b620ba6-ad9d-4088-9528-6fcb317af739)
