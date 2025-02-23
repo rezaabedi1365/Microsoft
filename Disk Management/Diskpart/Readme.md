@@ -1,4 +1,4 @@
-### diskpart 
+### Diskpart 
 https://novablog.ir/manage-partitions-with-cmd/ 
 - Delete partition override
 
