@@ -19,8 +19,10 @@ https://novablog.ir/manage-partitions-with-cmd/
 ![image](https://github.com/user-attachments/assets/9d497f13-876b-4762-af1f-d80b0522ae67)
 
 
- 
+### Format a Hard Drive Partition to NTFS/FAT32 
+
+
  
 
-How to change partition scheme between MBR and GPT in Windows PC? 
+### How to change partition scheme between MBR and GPT in Windows PC? 
 - https://www.diskpart.com/gpt-mbr/mbr-vs-gpt-1004.html 
