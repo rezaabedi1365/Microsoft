@@ -1,4 +1,6 @@
 ### Diskpart 
+
+### Delete Partition 
 https://novablog.ir/manage-partitions-with-cmd/ 
 - Delete partition override
 
@@ -9,8 +11,11 @@ https://novablog.ir/manage-partitions-with-cmd/
 ![image](https://github.com/user-attachments/assets/de102590-7d11-4e4a-95fb-54130df36a07)
 
 
+### Extend Partition
+- https://www.idiskhome.com/resource/partition/run-fdisk-on-windows-10-11.shtml#1-1
+![extend-c-drive-in-diskpart-1](https://github.com/user-attachments/assets/c7d86a5f-d1b0-4830-ad20-6b3063b99582)
 
-
+![image](https://github.com/user-attachments/assets/9d497f13-876b-4762-af1f-d80b0522ae67)
 
 
  
