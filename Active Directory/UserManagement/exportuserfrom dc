@@ -1,0 +1,6 @@
+
+## user from specific ou
+Get-ADUser -Filter * -SearchBase "OU=MYOU,OU=TopLevelOU,DC=contoso,DC=com" -Properties * | Select-Object Displayname,Description,userprincipalname,samaccountname,LastLogin | Export-csv C:\output.csv -NoTypeInformation
+
+## all user in dc
+Get-ADUser -Filter * -SearchBase "DC=contoso,DC=com" -Properties * | Select-Object Displayname,Description,userprincipalname,samaccountname,LastLogin | Export-csv C:\output.csv -NoTypeInformation
