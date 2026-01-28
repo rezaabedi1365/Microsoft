@@ -1,13 +1,13 @@
 ### prerequisite
-.NET Framework 4.8
-Visual C++ Redistributable 2013
-Visual C++ Redistributable 2012
-Unified Communications Managed API 4.0
+- .NET Framework 4.8
+- Visual C++ Redistributable 2013
+- Visual C++ Redistributable 2012
+- Unified Communications Managed API 4.0
 
-
+```
 Install-WindowsFeature Server-Media-Foundation, RSAT-ADDS
-
-
+```
+```
 Install-WindowsFeature NET-Framework-45-Features, \
 RPC-over-HTTP-proxy, \
 RSAT-Clustering, \
@@ -39,13 +39,18 @@ Web-Static-Content, \
 Web-Windows-Auth, \
 Web-WMI, \
 Windows-Identity-Foundation
+```
 
 
 schema
+```
 .\Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
-
+```
 forest
+```
 Setup.exe /PrepareAD /OrganizationName:"Devops" /IAcceptExchangeServerLicenseTerms
-
+```
 domain
+```
 Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+```
