@@ -1,6 +1,7 @@
 
-Permition for all users
-ms-DS-MachineAccountQuota [Default:10]
+### Permition for all users
+ADDS > 
+ - ms-DS-MachineAccountQuota [Default:10]
 
 
 Permition for all users
