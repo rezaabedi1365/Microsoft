@@ -1,17 +1,19 @@
 
-### Permition for all users
+#### Permition for all users
 ADDS > 
  - ms-DS-MachineAccountQuota [Default:10]
 
 
-Permition for all users
+#### Permition for all users
 Method1)
+```
 Get-ADDomain | Select-Object ComputersContainer
 redircmp "OU=NewJoin,DC=yourdomain,DC=com"
+```
 
 Create a custom task to delegate
-     Create Computer objects
-     Delete Computer objects
+ - Create Computer objects
+ - Delete Computer objects
   Permisiion
      ✅ Read
      ✅ Write
