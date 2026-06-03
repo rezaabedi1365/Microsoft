@@ -6,15 +6,16 @@ ADDS >
 
 #### Permition for all users
 Method1)
-```
+```Powershell
 Get-ADDomain | Select-Object ComputersContainer
 redircmp "OU=NewJoin,DC=yourdomain,DC=com"
 ```
 
+
 Create a custom task to delegate
  - Create Computer objects
  - Delete Computer objects
-  Permisiion
+Permisiion
      ✅ Read
      ✅ Write
      ✅ Reset password (برای Computer object)
