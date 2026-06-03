@@ -10,18 +10,18 @@ Method1)
 Get-ADDomain | Select-Object ComputersContainer
 redircmp "OU=NewJoin,DC=yourdomain,DC=com"
 ```
+Create OU [NewJoin]
+ - Right click > Deligation Control
 
-
-Create a custom task to delegate
- - Create Computer objects
- - Delete Computer objects
-Permisiion
-     ✅ Read
-     ✅ Write
-     ✅ Reset password (برای Computer object)
-     ✅ Validated write to DNS host name
-     ✅ Validated write to service principal name
-
+1- Create a custom task to delegate
+   + Create Computer objects
+   + Delete Computer objects
+2- Permisiion
+ - Read
+    + Write
+    + Reset password (برای Computer object)
+    + Validated write to DNS host name
+    + Validated write to service principal name
 
 -------------------
 Add-Computer -DomainName "yourdomain.com" -OUPath "OU=Workstations,DC=yourdomain,DC=com" -Credential yourdomain\user -Restart
