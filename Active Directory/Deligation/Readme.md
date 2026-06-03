@@ -25,7 +25,10 @@ Create OU [NewJoin]
 
 * OUPath : Client Side > add Comouter to to specefic OU
 ```Powershell
-Add-Computer -DomainName "yourdomain.com" -OUPath "OU=Workstations,DC=yourdomain,DC=com" -Credential yourdomain\user -Restart
+Add-Computer -DomainName "yourdomain.com" `
+-OUPath "OU=Workstations,DC=yourdomain,DC=com" `
+-Credential (Get-Credential) `
+-Restart
 ```
 
 ##### Method2)
