@@ -1,11 +1,11 @@
-
+# How to Prevent Standard Users from Joining Computers  
 #### Permition for all users
 ADDS > 
- - ms-DS-MachineAccountQuota [Default:10]
+ - ms-DS-MachineAccountQuota 0 [Default:10]
 
 
-#### Permition for all users
-Method1)
+#### Permition for Specific users
+##### Method1)
 ```Powershell
 Get-ADDomain | Select-Object ComputersContainer
 redircmp "OU=NewJoin,DC=yourdomain,DC=com"
@@ -23,31 +23,16 @@ Create OU [NewJoin]
     + Validated write to DNS host name
     + Validated write to service principal name
 
--------------------
+* OUPath : Client Side > add Comouter to to specefic OU
+```Powershell
 Add-Computer -DomainName "yourdomain.com" -OUPath "OU=Workstations,DC=yourdomain,DC=com" -Credential yourdomain\user -Restart
+```
 
-
-Method2)
+##### Method2)
 ADSI Edit > Default naming context > Click DC=yourdomain,DC=com > wellKnownObjects attribute
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-https://www.youtube.com/watch?v=dcE4rEgYxrk
-
-
-##  How to Prevent Standard Users from Joining Computers  
 
 step1)
 new > gourp [ global -security] > enable-join-group
