@@ -1,3 +1,45 @@
+
+Permition for all users
+ms-DS-MachineAccountQuota [Default:10]
+
+
+Permition for all users
+Method1)
+Get-ADDomain | Select-Object ComputersContainer
+redircmp "OU=NewJoin,DC=yourdomain,DC=com"
+
+Create a custom task to delegate
+     Create Computer objects
+     Delete Computer objects
+  Permisiion
+     ✅ Read
+     ✅ Write
+     ✅ Reset password (برای Computer object)
+     ✅ Validated write to DNS host name
+     ✅ Validated write to service principal name
+
+
+-------------------
+Add-Computer -DomainName "yourdomain.com" -OUPath "OU=Workstations,DC=yourdomain,DC=com" -Credential yourdomain\user -Restart
+
+
+Method2)
+ADSI Edit > Default naming context > Click DC=yourdomain,DC=com > wellKnownObjects attribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 https://www.youtube.com/watch?v=dcE4rEgYxrk
 
 
